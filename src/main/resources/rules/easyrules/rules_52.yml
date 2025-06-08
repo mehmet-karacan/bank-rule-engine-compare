@@ -1,0 +1,4 @@
+name: "rules_52"
+condition: "!((veri.yas < 30 && veri.medeniDurum == 'single') || (veri.iletisimTuru == 'unknown'))"
+actions:
+  - "veri.setKuralAdi('rules_52');"

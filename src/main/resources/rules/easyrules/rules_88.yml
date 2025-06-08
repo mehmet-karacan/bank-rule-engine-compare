@@ -1,0 +1,4 @@
+name: "rules_88"
+condition: "(veri.hedef == 'yes' && veri.egitim != 'unknown') && ((veri.kampanyaSayisi == 1 && veri.yas > 40) || (veri.kampanyaSayisi == 0 && veri.medeniDurum == 'single'))"
+actions:
+  - "veri.setKuralAdi('rules_88');"

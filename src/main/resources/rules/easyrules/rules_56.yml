@@ -1,0 +1,4 @@
+name: "rules_56"
+condition: "((veri.yas > 50 && veri.hedef == 'yes') || veri.kampanyaSayisi == 0) && veri.medeniDurum != 'single'"
+actions:
+  - "veri.setKuralAdi('rules_56');"

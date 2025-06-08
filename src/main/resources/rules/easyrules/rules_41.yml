@@ -1,0 +1,4 @@
+name: "rules_41"
+condition: "veri.iletisimTuru == 'cellular' && veri.kampanyaSayisi >= 1"
+actions:
+  - "veri.setKuralAdi('rules_41');"

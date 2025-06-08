@@ -1,0 +1,4 @@
+name: "rules_92"
+condition: "(veri.kampanyaSayisi == 0 && veri.medeniDurum == 'single') || (veri.yas > 60 && veri.hedef == 'no')"
+actions:
+  - "veri.setKuralAdi('rules_92');"

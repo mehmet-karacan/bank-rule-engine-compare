@@ -1,0 +1,4 @@
+name: "rules_38"
+condition: "veri.yas < 40 && veri.medeniDurum == 'single'"
+actions:
+  - "veri.setKuralAdi('rules_38');"

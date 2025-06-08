@@ -1,0 +1,4 @@
+name: "rules_6"
+condition: "veri.kampanyaSayisi > 0"
+actions:
+  - "veri.setKuralAdi('rules_6');"

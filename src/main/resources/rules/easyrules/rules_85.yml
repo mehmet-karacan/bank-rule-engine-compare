@@ -1,0 +1,4 @@
+name: "rules_85"
+condition: "((veri.kampanyaSayisi > 3 && veri.iletisimTuru == 'telephone') || (veri.kampanyaSayisi <= 1 && veri.iletisimTuru == 'unknown')) && veri.hedef == 'no'"
+actions:
+  - "veri.setKuralAdi('rules_85');"

@@ -1,0 +1,4 @@
+name: "rules_87"
+condition: "veri.iletisimTuru != 'unknown' && ((veri.yas < 35 && veri.hedef == 'no') || (veri.yas >= 60 && veri.kampanyaSayisi > 0))"
+actions:
+  - "veri.setKuralAdi('rules_87');"

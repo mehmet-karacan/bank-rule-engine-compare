@@ -1,0 +1,4 @@
+name: "rules_5"
+condition: "veri.iletisimTuru == 'telephone'"
+actions:
+  - "veri.setKuralAdi('rules_5');"

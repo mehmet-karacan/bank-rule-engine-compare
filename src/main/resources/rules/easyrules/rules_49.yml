@@ -1,0 +1,4 @@
+name: "rules_49"
+condition: "veri.egitim == 'high.school' && veri.medeniDurum == 'single'"
+actions:
+  - "veri.setKuralAdi('rules_49');"

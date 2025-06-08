@@ -1,0 +1,4 @@
+name: "rules_55"
+condition: "(veri.yas <= 35 || veri.kampanyaSayisi < 2) && (veri.egitim == 'university' || veri.iletisimTuru == 'telephone')"
+actions:
+  - "veri.setKuralAdi('rules_55');"

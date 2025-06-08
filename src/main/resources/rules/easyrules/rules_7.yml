@@ -1,0 +1,4 @@
+name: "rules_7"
+condition: "veri.yas < 25"
+actions:
+  - "veri.setKuralAdi('rules_7');"

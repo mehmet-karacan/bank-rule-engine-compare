@@ -1,0 +1,4 @@
+name: "rules_4"
+condition: "veri.hedef == 'yes'"
+actions:
+  - "veri.setKuralAdi('rules_4');"

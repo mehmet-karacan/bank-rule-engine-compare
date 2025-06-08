@@ -1,0 +1,4 @@
+name: "rules_46"
+condition: "veri.egitim == 'unknown' && veri.iletisimTuru == 'unknown'"
+actions:
+  - "veri.setKuralAdi('rules_46');"

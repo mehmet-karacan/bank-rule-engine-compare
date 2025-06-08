@@ -1,0 +1,4 @@
+name: "rules_34"
+condition: "veri.egitim == 'primary' && veri.hedef == 'no'"
+actions:
+  - "veri.setKuralAdi('rules_34');"

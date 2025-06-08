@@ -1,0 +1,4 @@
+name: "rules_16"
+condition: "veri.egitim == 'university' && veri.iletisimTuru == 'unknown'"
+actions:
+  - "veri.setKuralAdi('rules_16');"

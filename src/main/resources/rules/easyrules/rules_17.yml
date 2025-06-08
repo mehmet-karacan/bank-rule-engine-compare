@@ -1,0 +1,4 @@
+name: "rules_17"
+condition: "veri.yas < 35 && veri.kampanyaSayisi == 0"
+actions:
+  - "veri.setKuralAdi('rules_17');"

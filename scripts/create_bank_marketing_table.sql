@@ -1,0 +1,23 @@
+CREATE TABLE bank_marketing (
+    age INT,
+    job VARCHAR(50),
+    marital VARCHAR(20),
+    education VARCHAR(50),
+    "default" VARCHAR(10),
+    housing VARCHAR(10),
+    loan VARCHAR(10),
+    contact VARCHAR(20),
+    month VARCHAR(20),
+    day_of_week VARCHAR(15),
+    duration INT,
+    campaign INT,
+    pdays INT,
+    previous INT,
+    poutcome VARCHAR(20),
+    emp_var_rate FLOAT,
+    cons_price_idx FLOAT,
+    cons_conf_idx FLOAT,
+    euribor3m FLOAT,
+    nr_employed FLOAT,
+    y VARCHAR(10)
+);

@@ -1,0 +1,4 @@
+name: "rules_43"
+condition: "veri.medeniDurum == 'married' && veri.egitim == 'university'"
+actions:
+  - "veri.setKuralAdi('rules_43');"

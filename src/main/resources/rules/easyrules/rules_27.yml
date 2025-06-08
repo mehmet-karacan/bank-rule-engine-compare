@@ -1,0 +1,4 @@
+name: "rules_27"
+condition: "veri.medeniDurum == 'single' && veri.kampanyaSayisi > 1"
+actions:
+  - "veri.setKuralAdi('rules_27');"

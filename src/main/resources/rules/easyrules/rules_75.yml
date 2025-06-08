@@ -1,0 +1,4 @@
+name: "rules_75"
+condition: "((veri.egitim == 'high.school' && veri.hedef == 'yes') && veri.medeniDurum == 'single') || ((veri.yas > 40 && veri.kampanyaSayisi < 2) && !(veri.iletisimTuru == 'unknown'))"
+actions:
+  - "veri.setKuralAdi('rules_75');"

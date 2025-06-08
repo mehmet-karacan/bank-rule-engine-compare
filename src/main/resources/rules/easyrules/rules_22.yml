@@ -1,0 +1,4 @@
+name: "rules_22"
+condition: "(veri.hedef == 'no' && veri.iletisimTuru == 'unknown') || (veri.hedef == 'yes' && veri.iletisimTuru == 'telephone')"
+actions:
+  - "veri.setKuralAdi('rules_22');"

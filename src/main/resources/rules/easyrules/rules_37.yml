@@ -1,0 +1,4 @@
+name: "rules_37"
+condition: "veri.kampanyaSayisi >= 2 && veri.egitim == 'high.school'"
+actions:
+  - "veri.setKuralAdi('rules_37');"

@@ -1,0 +1,4 @@
+name: "rules_48"
+condition: "veri.kampanyaSayisi <= 1 && veri.hedef == 'yes'"
+actions:
+  - "veri.setKuralAdi('rules_48');"

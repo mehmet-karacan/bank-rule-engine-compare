@@ -1,0 +1,4 @@
+name: "rules_91"
+condition: "(veri.iletisimTuru == 'telephone' && (veri.egitim == 'high.school' || veri.egitim == 'university')) && veri.hedef == 'yes'"
+actions:
+  - "veri.setKuralAdi('rules_91');"

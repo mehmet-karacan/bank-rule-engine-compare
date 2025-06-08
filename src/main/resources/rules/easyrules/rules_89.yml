@@ -1,0 +1,4 @@
+name: "rules_89"
+condition: "(veri.yas >= 50 && veri.medeniDurum == 'married') && (veri.egitim == 'university' || veri.iletisimTuru == 'cellular')"
+actions:
+  - "veri.setKuralAdi('rules_89');"

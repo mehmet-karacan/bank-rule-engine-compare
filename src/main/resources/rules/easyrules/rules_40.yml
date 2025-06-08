@@ -1,0 +1,4 @@
+name: "rules_40"
+condition: "veri.yas >= 50 && veri.egitim == 'primary'"
+actions:
+  - "veri.setKuralAdi('rules_40');"

@@ -1,0 +1,4 @@
+name: "rules_79"
+condition: "(veri.egitim == 'unknown' || veri.iletisimTuru == 'unknown') && (veri.hedef == 'no' && veri.kampanyaSayisi > 0)"
+actions:
+  - "veri.setKuralAdi('rules_79');"

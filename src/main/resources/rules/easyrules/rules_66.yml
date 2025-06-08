@@ -1,0 +1,4 @@
+name: "rules_66"
+condition: "(veri.yas >= 60 && veri.hedef == 'yes' && !(veri.egitim == 'unknown')) || ((veri.medeniDurum != 'married' && veri.iletisimTuru == 'telephone') && veri.kampanyaSayisi < 2)"
+actions:
+  - "veri.setKuralAdi('rules_66');"

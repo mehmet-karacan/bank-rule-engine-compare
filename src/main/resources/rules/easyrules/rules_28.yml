@@ -1,0 +1,4 @@
+name: "rules_28"
+condition: "veri.hedef == 'yes' && veri.iletisimTuru == 'cellular'"
+actions:
+  - "veri.setKuralAdi('rules_28');"

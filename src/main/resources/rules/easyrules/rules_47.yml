@@ -1,0 +1,4 @@
+name: "rules_47"
+condition: "veri.yas > 30 && veri.medeniDurum == 'divorced'"
+actions:
+  - "veri.setKuralAdi('rules_47');"

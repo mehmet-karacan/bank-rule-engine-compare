@@ -1,0 +1,4 @@
+name: "rules_96"
+condition: "veri.iletisimTuru == 'telephone' && (veri.kampanyaSayisi > 0 && (veri.yas < 30 || veri.medeniDurum == 'single'))"
+actions:
+  - "veri.setKuralAdi('rules_96');"

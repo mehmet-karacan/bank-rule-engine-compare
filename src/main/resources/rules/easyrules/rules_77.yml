@@ -1,0 +1,4 @@
+name: "rules_77"
+condition: "veri.iletisimTuru == 'cellular' && ((veri.kampanyaSayisi > 1 && veri.hedef == 'no') || (veri.kampanyaSayisi == 0 && veri.egitim == 'high.school'))"
+actions:
+  - "veri.setKuralAdi('rules_77');"

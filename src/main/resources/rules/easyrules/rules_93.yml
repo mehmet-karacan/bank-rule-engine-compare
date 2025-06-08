@@ -1,0 +1,4 @@
+name: "rules_93"
+condition: "(veri.egitim == 'unknown' && veri.yas < 40) && (veri.iletisimTuru == 'cellular' || veri.hedef == 'yes')"
+actions:
+  - "veri.setKuralAdi('rules_93');"

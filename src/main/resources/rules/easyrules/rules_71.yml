@@ -1,0 +1,4 @@
+name: "rules_71"
+condition: "((veri.kampanyaSayisi > 2 && veri.iletisimTuru == 'cellular') && veri.hedef != 'unknown') || ((veri.yas > 45 && veri.egitim == 'basic') && !(veri.medeniDurum == 'divorced'))"
+actions:
+  - "veri.setKuralAdi('rules_71');"

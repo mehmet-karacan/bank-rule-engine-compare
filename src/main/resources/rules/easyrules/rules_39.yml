@@ -1,0 +1,4 @@
+name: "rules_39"
+condition: "veri.hedef == 'yes' && veri.kampanyaSayisi > 1"
+actions:
+  - "veri.setKuralAdi('rules_39');"

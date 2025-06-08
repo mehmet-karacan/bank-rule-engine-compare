@@ -1,0 +1,4 @@
+name: "rules_31"
+condition: "veri.kampanyaSayisi == 0 && veri.iletisimTuru == 'unknown'"
+actions:
+  - "veri.setKuralAdi('rules_31');"

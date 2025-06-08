@@ -1,0 +1,4 @@
+name: "rules_84"
+condition: "veri.hedef == 'yes' && ((veri.yas < 35 && veri.medeniDurum == 'single') || (veri.yas > 60 && veri.egitim == 'unknown'))"
+actions:
+  - "veri.setKuralAdi('rules_84');"

@@ -1,0 +1,4 @@
+name: "rules_35"
+condition: "veri.yas >= 45 && veri.iletisimTuru == 'telephone'"
+actions:
+  - "veri.setKuralAdi('rules_35');"

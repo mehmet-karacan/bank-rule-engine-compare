@@ -1,0 +1,348 @@
+package rules.drools
+
+import com.rules.compare.model.BankaPazarlamaVerisi;
+
+// Karmaşık kurallar (Kural_76 - Kural_100)
+rule "Kural_76"
+when
+    $veri : BankaPazarlamaVerisi(
+        (yas >= 30 && yas <= 50 && hedef == "yes") ||
+        (yas > 50 && medeniDurum == "single" && egitim == "university")
+    )
+then
+    $veri.setKuralAdi("Kural_76");
+end
+
+rule "Kural_77"
+when
+    $veri : BankaPazarlamaVerisi(
+        iletisimTuru == "cellular" &&
+        ((kampanyaSayisi > 1 && hedef == "no") || (kampanyaSayisi == 0 && egitim == "high.school"))
+    )
+then
+    $veri.setKuralAdi("Kural_77");
+end
+
+rule "Kural_78"
+when
+    $veri : BankaPazarlamaVerisi(
+        (yas < 40 && egitim == "university" && medeniDurum == "married") ||
+        (yas > 60 && hedef == "yes" && kampanyaSayisi >= 2)
+    )
+then
+    $veri.setKuralAdi("Kural_78");
+end
+
+rule "Kural_79"
+when
+    $veri : BankaPazarlamaVerisi(
+        (egitim == "unknown" || iletisimTuru == "unknown") &&
+        (hedef == "no" && kampanyaSayisi > 0)
+    )
+then
+    $veri.setKuralAdi("Kural_79");
+end
+
+rule "Kural_80"
+when
+    $veri : BankaPazarlamaVerisi(
+        yas > 45 &&
+        (
+            (medeniDurum == "single" && hedef == "yes") ||
+            (medeniDurum == "married" && iletisimTuru == "telephone")
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_80");
+end
+
+rule "Kural_81"
+when
+    $veri : BankaPazarlamaVerisi(
+        (yas < 30 || egitim == "high.school") &&
+        (
+            hedef == "no" ||
+            (kampanyaSayisi >= 2 && iletisimTuru == "cellular")
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_81");
+end
+
+rule "Kural_82"
+when
+    $veri : BankaPazarlamaVerisi(
+        ((yas >= 40 && yas <= 60) && medeniDurum == "divorced") ||
+        (egitim == "university" && hedef == "yes" && kampanyaSayisi == 1)
+    )
+then
+    $veri.setKuralAdi("Kural_82");
+end
+
+rule "Kural_83"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            (egitim == "university" || egitim == "high.school") &&
+            yas > 55
+        ) &&
+        (
+            kampanyaSayisi > 1 || iletisimTuru == "telephone"
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_83");
+end
+
+rule "Kural_84"
+when
+    $veri : BankaPazarlamaVerisi(
+        hedef == "yes" &&
+        (
+            (yas < 35 && medeniDurum == "single") ||
+            (yas > 60 && egitim == "unknown")
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_84");
+end
+
+rule "Kural_85"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            (kampanyaSayisi > 3 && iletisimTuru == "telephone") ||
+            (kampanyaSayisi <= 1 && iletisimTuru == "unknown")
+        ) &&
+        hedef == "no"
+    )
+then
+    $veri.setKuralAdi("Kural_85");
+end
+
+rule "Kural_86"
+when
+    $veri : BankaPazarlamaVerisi(
+        yas < 50 &&
+        (
+            (egitim == "university" && kampanyaSayisi > 1) ||
+            (egitim == "high.school" && medeniDurum == "married")
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_86");
+end
+
+rule "Kural_87"
+when
+    $veri : BankaPazarlamaVerisi(
+        iletisimTuru != "unknown" &&
+        (
+            (yas < 35 && hedef == "no") ||
+            (yas >= 60 && kampanyaSayisi > 0)
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_87");
+end
+
+rule "Kural_88"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            hedef == "yes" && egitim != "unknown"
+        ) &&
+        (
+            (kampanyaSayisi == 1 && yas > 40) ||
+            (kampanyaSayisi == 0 && medeniDurum == "single")
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_88");
+end
+
+rule "Kural_89"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            yas >= 50 && medeniDurum == "married"
+        ) &&
+        (
+            egitim == "university" || iletisimTuru == "cellular"
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_89");
+end
+
+rule "Kural_90"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            hedef == "no" && iletisimTuru != "unknown"
+        ) &&
+        (
+            kampanyaSayisi > 1 && yas < 45
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_90");
+end
+
+rule "Kural_91"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            iletisimTuru == "telephone" &&
+            (
+                egitim == "high.school" || egitim == "university"
+            )
+        ) &&
+        hedef == "yes"
+    )
+then
+    $veri.setKuralAdi("Kural_91");
+end
+
+rule "Kural_92"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            kampanyaSayisi == 0 && medeniDurum == "single"
+        ) ||
+        (
+            yas > 60 && hedef == "no"
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_92");
+end
+
+rule "Kural_93"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            egitim == "unknown" && yas < 40
+        ) &&
+        (
+            iletisimTuru == "cellular" || hedef == "yes"
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_93");
+end
+
+rule "Kural_94"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            medeniDurum == "married" &&
+            kampanyaSayisi >= 1 &&
+            hedef == "yes"
+        ) ||
+        (
+            egitim == "university" &&
+            yas >= 30 &&
+            iletisimTuru == "telephone"
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_94");
+end
+
+rule "Kural_95"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            yas > 35 && kampanyaSayisi == 2
+        ) &&
+        (
+            medeniDurum == "divorced" || hedef == "no"
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_95");
+end
+
+rule "Kural_96"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            iletisimTuru == "telephone" &&
+            (
+                kampanyaSayisi > 0 &&
+                (
+                    yas < 30 || medeniDurum == "single"
+                )
+            )
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_96");
+end
+
+rule "Kural_97"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            hedef == "no" && egitim == "unknown"
+        ) &&
+        (
+            iletisimTuru != "cellular" && kampanyaSayisi < 3
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_97");
+end
+
+rule "Kural_98"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            yas >= 45 && yas <= 55 &&
+            egitim != "unknown" &&
+            (
+                hedef == "yes" || kampanyaSayisi > 0
+            )
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_98");
+end
+
+rule "Kural_99"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            kampanyaSayisi == 1 && medeniDurum == "married"
+        ) &&
+        (
+            egitim == "high.school" &&
+            (
+                iletisimTuru == "telephone" || hedef == "yes"
+            )
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_99");
+end
+
+rule "Kural_100"
+when
+    $veri : BankaPazarlamaVerisi(
+        (
+            yas < 35 &&
+            (
+                kampanyaSayisi > 0 || egitim == "university"
+            )
+        ) &&
+        (
+            hedef == "yes" &&
+            (
+                medeniDurum == "single" || iletisimTuru == "cellular"
+            )
+        )
+    )
+then
+    $veri.setKuralAdi("Kural_100");
+end

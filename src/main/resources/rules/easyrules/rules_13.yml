@@ -1,0 +1,4 @@
+name: "rules_13"
+condition: "veri.hedef == 'yes' && veri.iletisimTuru == 'telephone'"
+actions:
+  - "veri.setKuralAdi('rules_13');"

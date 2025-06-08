@@ -1,0 +1,4 @@
+name: "rules_62"
+condition: "(veri.yas < 40 && !(veri.egitim == 'unknown')) && ((veri.kampanyaSayisi >= 2 && veri.hedef == 'no') || (veri.medeniDurum == 'single' && veri.iletisimTuru != 'telephone'))"
+actions:
+  - "veri.setKuralAdi('rules_62');"
